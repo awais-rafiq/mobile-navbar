@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://npkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"> -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body class="bg-cyan-400">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-8 inline" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABA
+            QAAAQABAAD/2wCEAAkGBxQSEBUQEBASF
+            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" alt="">
+            Tailwind
+        </span>
+
+        <span class="text-3xl cursor-pointer md:hidden block mx-2">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+    </div>
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute 
+     bg-white w-full md:w-automd:py-0 py-4 left-0 md:pl-0 pl-7 
+        md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500 ">
+        <li class="mx-4 my-6 md:my-0 ">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">Service</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
+        </li>
+        <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 
+        hover:bg-cyan-600 rounded">
+            GET STARTED
+        </button>
+    </ul>
+    </nav>
+     
+    <script>
+
+        function Menu(e){
+            let list= document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name="close", list.classList. 
+            add('top-[80px]'), list.classList.add('opacity-100')) 
+             :( e.name=  "menu",list.classList.remove('top-[80px]'
+               ),list.classList.remove('opacity-100'))
+        }
+    </script>
+
+
+
+</body>
+</html>
